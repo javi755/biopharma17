@@ -1,0 +1,31 @@
+unique_name: Material
+object_type: dimension
+label: Material
+type: standard
+level_attributes:
+  - unique_name: Material Category
+    label: Material Category
+    dataset: DIM_MATERIAL
+    name_column: MATERIAL_CATEGORY
+    key_columns:
+      - MATERIAL_CATEGORY
+  - unique_name: Material
+    label: Material
+    dataset: DIM_MATERIAL
+    name_column: MATERIAL_NAME
+    key_columns:
+      - MATERIAL_ID
+  - unique_name: Supplier
+    label: Supplier
+    dataset: DIM_MATERIAL
+    name_column: SUPPLIER_NAME
+    key_columns:
+      - SUPPLIER_NAME
+hierarchies:
+  - unique_name: Material Hierarchy
+    label: Material Hierarchy
+    levels:
+      - unique_name: Material Category
+        level_attribute: Material Category
+      - unique_name: Material
+        level_attribute: Material

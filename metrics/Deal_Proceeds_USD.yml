@@ -1,0 +1,6 @@
+unique_name: Deal_Proceeds_USD
+object_type: metric
+label: Deal Proceeds USD
+dataset: FACT_CASH_MONTHLY
+column: DEAL_PROCEEDS_USD
+calculation_method: sum

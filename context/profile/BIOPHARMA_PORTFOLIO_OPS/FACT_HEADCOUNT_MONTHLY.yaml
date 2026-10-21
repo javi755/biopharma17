@@ -1,0 +1,91 @@
+tables:
+- name: FACT_HEADCOUNT_MONTHLY
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  sample_rows: 100
+  declared_primary_key: [HEADCOUNT_ID]
+  declared_foreign_keys:
+  - columns: [MONTH_DATE_KEY]
+    references:
+      table: DIM_DATE
+      columns: [DATE_KEY]
+  - columns: [DEPARTMENT_ID]
+    references:
+      table: DIM_DEPARTMENT
+      columns: [DEPARTMENT_ID]
+  - columns: [OWNER_PERSON_ID]
+    references:
+      table: DIM_PERSON
+      columns: [PERSON_ID]
+  columns:
+  - name: HEADCOUNT_ID
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 100
+    mean: 50.5
+    sample_values: [1, 2, 3]
+  - name: MONTH_DATE_KEY
+    type: NUMBER
+    distinct_count: 22
+    distinct_count_source: sample
+    null_count: 0
+    min: 20250131
+    max: 20261031
+    mean: 20254640.41
+    sample_values: [20250131, 20250228, 20250331]
+  - name: DEPARTMENT_ID
+    type: NUMBER
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 5
+    mean: 2.8
+    sample_values: [1, 2, 3]
+  - name: OWNER_PERSON_ID
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 7
+    mean: 3.42
+    sample_values: [2, 4, 7]
+  - name: HEADCOUNT
+    type: NUMBER
+    distinct_count: 24
+    distinct_count_source: sample
+    null_count: 0
+    min: 6
+    max: 107
+    mean: 53.15
+    sample_values: [105, 106, 104]
+  - name: HIRES
+    type: NUMBER
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 4
+    mean: 0.47
+    sample_values: [1, 0, 2]
+  - name: EXITS
+    type: NUMBER
+    distinct_count: 6
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 6
+    mean: 0.57
+    sample_values: [1, 0, 2]
+  - name: VOLUNTARY_EXITS
+    type: NUMBER
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 4
+    mean: 0.41
+    sample_values: [1, 0, 2]

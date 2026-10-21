@@ -1,0 +1,6 @@
+unique_name: Doses_Produced
+object_type: metric
+label: Doses Produced
+dataset: FACT_MANUFACTURING_BATCH
+column: DOSES_PRODUCED
+calculation_method: sum

@@ -1,0 +1,6 @@
+unique_name: Partner_Net_Sales_USD
+object_type: metric
+label: Partner Net Sales USD
+dataset: FACT_DEAL_CASH_FLOW
+column: PARTNER_NET_SALES_USD
+calculation_method: sum

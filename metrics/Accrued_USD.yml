@@ -1,0 +1,6 @@
+unique_name: Accrued_USD
+object_type: metric
+label: Accrued USD
+dataset: FACT_DEAL_CASH_FLOW
+column: ACCRUED_USD
+calculation_method: sum

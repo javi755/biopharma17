@@ -1,0 +1,6 @@
+unique_name: Planned_Enrollment
+object_type: metric
+label: Planned Enrollment
+dataset: FACT_ENROLLMENT_WEEKLY
+column: PLANNED_ENROLLMENT
+calculation_method: sum

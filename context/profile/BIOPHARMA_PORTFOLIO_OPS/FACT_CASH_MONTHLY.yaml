@@ -1,0 +1,110 @@
+tables:
+- name: FACT_CASH_MONTHLY
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 44
+  row_count_source: sample
+  sample_rows: 44
+  declared_primary_key: [CASH_ID]
+  declared_foreign_keys:
+  - columns: [MONTH_DATE_KEY]
+    references:
+      table: DIM_DATE
+      columns: [DATE_KEY]
+  columns:
+  - name: CASH_ID
+    type: NUMBER
+    distinct_count: 44
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 44
+    mean: 22.5
+    sample_values: [1, 2, 3]
+    is_unique: true
+  - name: MONTH_DATE_KEY
+    type: NUMBER
+    distinct_count: 22
+    distinct_count_source: sample
+    null_count: 0
+    min: 20250131
+    max: 20261031
+    mean: 20255180.409091
+    sample_values: [20250131, 20250228, 20250331]
+    is_unique: false
+  - name: CASH_ACCOUNT
+    type: TEXT
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Operating account, Treasury portfolio]
+    is_unique: false
+  - name: CASH_BALANCE_USD
+    type: NUMBER
+    distinct_count: 23
+    distinct_count_source: sample
+    null_count: 0
+    min: 35000000
+    max: 1205162561.8
+    mean: 286186117.946136
+    sample_values: [35000000, 252794006.69, 240220633.24]
+    is_unique: false
+  - name: OPERATING_OUTFLOWS_USD
+    type: NUMBER
+    distinct_count: 23
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 39103575.41
+    mean: 7343550.895682
+    sample_values: [13133493.31, 0, 13458152.47]
+    is_unique: false
+  - name: TSA_REIMBURSEMENTS_USD
+    type: NUMBER
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 2172537.51
+    mean: 284656.855909
+    sample_values: [0, 2035611.24, 2126658.39]
+    is_unique: false
+  - name: DEAL_PROCEEDS_USD
+    type: NUMBER
+    distinct_count: 3
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 1150000000
+    mean: 27272727.272727
+    sample_values: [0, 1150000000, 50000000]
+    is_unique: false
+  - name: INTEREST_INCOME_USD
+    type: NUMBER
+    distinct_count: 23
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 4218068.97
+    mean: 866619.8275
+    sample_values: [0, 927500, 884779.02]
+    is_unique: false
+  - name: NET_BURN_USD
+    type: NUMBER
+    distinct_count: 23
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 39103575.41
+    mean: 7058894.039773
+    sample_values: [13133493.31, 0, 13458152.47]
+    is_unique: false
+  - name: TRAILING_3M_AVG_NET_BURN_USD
+    type: NUMBER
+    distinct_count: 23
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 22881237.03
+    mean: 7124676.470682
+    sample_values: [13133493.31, 0, 13295822.89]
+    is_unique: false

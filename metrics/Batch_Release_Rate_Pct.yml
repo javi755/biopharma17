@@ -1,0 +1,4 @@
+unique_name: Batch_Release_Rate_Pct
+object_type: metric_calc
+label: Batch Release Rate %
+expression: "[Released_Doses] / [Doses_Produced]"

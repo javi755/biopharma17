@@ -1,0 +1,14 @@
+unique_name: DIM_COST_CATEGORY
+object_type: dataset
+label: DIM_COST_CATEGORY
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: DIM_COST_CATEGORY
+columns:
+  - name: COST_CATEGORY_ID
+    data_type: decimal
+  - name: COST_CATEGORY_NAME
+    data_type: string
+  - name: COST_CATEGORY_GROUP
+    data_type: string
+  - name: IS_PARTNER_REIMBURSABLE
+    data_type: boolean

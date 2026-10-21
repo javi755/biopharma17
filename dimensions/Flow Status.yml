@@ -1,0 +1,17 @@
+unique_name: Flow Status
+object_type: dimension
+label: Flow Status
+is_degenerate: true
+level_attributes:
+  - unique_name: Flow Status
+    label: Flow Status
+    dataset: FACT_DEAL_CASH_FLOW
+    name_column: FLOW_STATUS
+    key_columns:
+      - FLOW_STATUS
+hierarchies:
+  - unique_name: Flow Status
+    label: Flow Status
+    levels:
+      - unique_name: Flow Status
+        level_attribute: Flow Status

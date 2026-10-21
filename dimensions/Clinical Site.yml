@@ -1,0 +1,40 @@
+unique_name: Clinical Site
+object_type: dimension
+label: Clinical Site
+type: standard
+level_attributes:
+  - unique_name: State
+    label: State
+    dataset: DIM_CLINICAL_SITE
+    name_column: STATE
+    key_columns:
+      - STATE
+  - unique_name: City
+    label: City
+    dataset: DIM_CLINICAL_SITE
+    name_column: CITY
+    key_columns:
+      - STATE
+      - CITY
+  - unique_name: Site
+    label: Site
+    dataset: DIM_CLINICAL_SITE
+    name_column: SITE_NAME
+    key_columns:
+      - SITE_ID
+  - unique_name: Principal Investigator
+    label: Principal Investigator
+    dataset: DIM_CLINICAL_SITE
+    name_column: PRINCIPAL_INVESTIGATOR
+    key_columns:
+      - PRINCIPAL_INVESTIGATOR
+hierarchies:
+  - unique_name: Site Geography
+    label: Site Geography
+    levels:
+      - unique_name: State
+        level_attribute: State
+      - unique_name: City
+        level_attribute: City
+      - unique_name: Site
+        level_attribute: Site

@@ -1,0 +1,38 @@
+unique_name: FACT_DEAL_CASH_FLOW
+object_type: dataset
+label: FACT_DEAL_CASH_FLOW
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: FACT_DEAL_CASH_FLOW
+columns:
+  - name: FLOW_ID
+    data_type: decimal
+  - name: FLOW_DATE_KEY
+    data_type: decimal
+  - name: PROGRAM_ID
+    data_type: decimal
+  - name: COUNTERPARTY_ID
+    data_type: decimal
+  - name: MILESTONE_ID
+    data_type: decimal
+  - name: OWNER_PERSON_ID
+    data_type: decimal
+  - name: FLOW_TYPE
+    data_type: string
+  - name: FLOW_STATUS
+    data_type: string
+  - name: CONTRACT_VALUE_USD
+    data_type: decimal
+  - name: CASH_RECEIVED_USD
+    data_type: decimal
+  - name: PENDING_CONFIRMATION_USD
+    data_type: decimal
+  - name: OUTSTANDING_USD
+    data_type: decimal
+  - name: ACCRUED_USD
+    data_type: decimal
+  - name: FORECAST_USD
+    data_type: decimal
+  - name: PARTNER_NET_SALES_USD
+    data_type: decimal
+  - name: IS_FORECAST
+    data_type: boolean

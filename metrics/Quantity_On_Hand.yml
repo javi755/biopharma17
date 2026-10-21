@@ -1,0 +1,6 @@
+unique_name: Quantity_On_Hand
+object_type: metric
+label: Quantity On Hand
+dataset: FACT_RAW_MATERIAL_LOT
+column: QUANTITY_ON_HAND
+calculation_method: sum

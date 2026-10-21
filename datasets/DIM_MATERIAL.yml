@@ -1,0 +1,24 @@
+unique_name: DIM_MATERIAL
+object_type: dataset
+label: DIM_MATERIAL
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: DIM_MATERIAL
+columns:
+  - name: MATERIAL_ID
+    data_type: decimal
+  - name: MATERIAL_CODE
+    data_type: string
+  - name: MATERIAL_NAME
+    data_type: string
+  - name: MATERIAL_CATEGORY
+    data_type: string
+  - name: UNIT_OF_MEASURE
+    data_type: string
+  - name: SUPPLIER_NAME
+    data_type: string
+  - name: QUANTITY_PER_BATCH
+    data_type: double
+  - name: STANDARD_LEAD_TIME_DAYS
+    data_type: decimal
+  - name: IS_CRITICAL
+    data_type: boolean

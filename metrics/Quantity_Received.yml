@@ -1,0 +1,6 @@
+unique_name: Quantity_Received
+object_type: metric
+label: Quantity Received
+dataset: FACT_RAW_MATERIAL_LOT
+column: QUANTITY_RECEIVED
+calculation_method: sum

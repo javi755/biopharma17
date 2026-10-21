@@ -1,0 +1,6 @@
+unique_name: Planned_Output_Grams
+object_type: metric
+label: Planned Output Grams
+dataset: FACT_MANUFACTURING_BATCH
+column: PLANNED_OUTPUT_GRAMS
+calculation_method: sum

@@ -1,0 +1,64 @@
+unique_name: Date
+object_type: dimension
+label: Date
+type: time
+level_attributes:
+  - unique_name: Year
+    label: Year
+    dataset: DIM_DATE
+    name_column: YEAR_NUM
+    key_columns:
+      - YEAR_NUM
+    sort_column: YEAR_NUM
+    time_unit: year
+  - unique_name: Quarter
+    label: Quarter
+    dataset: DIM_DATE
+    name_column: QUARTER_NAME
+    key_columns:
+      - QUARTER_KEY
+    sort_column: QUARTER_KEY
+    time_unit: quarter
+  - unique_name: Month
+    label: Month
+    dataset: DIM_DATE
+    name_column: MONTH_NAME
+    key_columns:
+      - MONTH_KEY
+    sort_column: MONTH_KEY
+    time_unit: month
+  - unique_name: Week
+    label: Week
+    dataset: DIM_DATE
+    name_column: WEEK_NAME
+    key_columns:
+      - WEEK_KEY
+    sort_column: WEEK_KEY
+    time_unit: week
+  - unique_name: Day
+    label: Day
+    dataset: DIM_DATE
+    name_column: FULL_DATE
+    key_columns:
+      - DATE_KEY
+    sort_column: DATE_KEY
+    time_unit: day
+hierarchies:
+  - unique_name: Calendar
+    label: Calendar
+    levels:
+      - unique_name: Year
+        level_attribute: Year
+      - unique_name: Quarter
+        level_attribute: Quarter
+      - unique_name: Month
+        level_attribute: Month
+      - unique_name: Day
+        level_attribute: Day
+  - unique_name: Weekly
+    label: Weekly
+    levels:
+      - unique_name: Week
+        level_attribute: Week
+      - unique_name: Day
+        level_attribute: Day

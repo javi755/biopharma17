@@ -1,0 +1,31 @@
+unique_name: Department
+object_type: dimension
+label: Department
+type: standard
+level_attributes:
+  - unique_name: Function Group
+    label: Function Group
+    dataset: DIM_DEPARTMENT
+    name_column: FUNCTION_GROUP
+    key_columns:
+      - FUNCTION_GROUP
+  - unique_name: Department
+    label: Department
+    dataset: DIM_DEPARTMENT
+    name_column: DEPARTMENT_NAME
+    key_columns:
+      - DEPARTMENT_ID
+  - unique_name: Department Head
+    label: Department Head
+    dataset: DIM_DEPARTMENT
+    name_column: DEPARTMENT_HEAD_NAME
+    key_columns:
+      - DEPARTMENT_HEAD_NAME
+hierarchies:
+  - unique_name: Department Hierarchy
+    label: Department Hierarchy
+    levels:
+      - unique_name: Function Group
+        level_attribute: Function Group
+      - unique_name: Department
+        level_attribute: Department

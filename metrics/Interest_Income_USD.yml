@@ -1,0 +1,6 @@
+unique_name: Interest_Income_USD
+object_type: metric
+label: Interest Income USD
+dataset: FACT_CASH_MONTHLY
+column: INTEREST_INCOME_USD
+calculation_method: sum

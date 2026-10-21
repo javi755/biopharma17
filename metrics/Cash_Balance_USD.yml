@@ -1,0 +1,10 @@
+unique_name: Cash_Balance_USD
+object_type: metric
+label: Cash Balance USD
+dataset: FACT_CASH_MONTHLY
+column: CASH_BALANCE_USD
+calculation_method: sum
+semi_additive:
+  position: last
+  relationships:
+    - Cash to Date

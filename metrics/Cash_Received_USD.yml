@@ -1,0 +1,6 @@
+unique_name: Cash_Received_USD
+object_type: metric
+label: Cash Received USD
+dataset: FACT_DEAL_CASH_FLOW
+column: CASH_RECEIVED_USD
+calculation_method: sum

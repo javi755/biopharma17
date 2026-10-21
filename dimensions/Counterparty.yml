@@ -1,0 +1,31 @@
+unique_name: Counterparty
+object_type: dimension
+label: Counterparty
+type: standard
+level_attributes:
+  - unique_name: Counterparty Type
+    label: Counterparty Type
+    dataset: DIM_COUNTERPARTY
+    name_column: COUNTERPARTY_TYPE
+    key_columns:
+      - COUNTERPARTY_TYPE
+  - unique_name: Counterparty
+    label: Counterparty
+    dataset: DIM_COUNTERPARTY
+    name_column: COUNTERPARTY_NAME
+    key_columns:
+      - COUNTERPARTY_ID
+  - unique_name: Relationship Owner
+    label: Relationship Owner
+    dataset: DIM_COUNTERPARTY
+    name_column: RELATIONSHIP_OWNER_NAME
+    key_columns:
+      - RELATIONSHIP_OWNER_NAME
+hierarchies:
+  - unique_name: Counterparty Hierarchy
+    label: Counterparty Hierarchy
+    levels:
+      - unique_name: Counterparty Type
+        level_attribute: Counterparty Type
+      - unique_name: Counterparty
+        level_attribute: Counterparty

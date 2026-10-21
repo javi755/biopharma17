@@ -1,0 +1,339 @@
+unique_name: Biopharma_Portfolio_Ops
+object_type: model
+label: Biopharma Portfolio Ops
+relationships:
+  - unique_name: Cash to Date
+    from:
+      dataset: FACT_CASH_MONTHLY
+      join_columns:
+        - MONTH_DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: Deal Flow to Date
+    from:
+      dataset: FACT_DEAL_CASH_FLOW
+      join_columns:
+        - FLOW_DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: Deal Flow to Program
+    from:
+      dataset: FACT_DEAL_CASH_FLOW
+      join_columns:
+        - PROGRAM_ID
+    to:
+      dimension: Program
+      level: Program
+  - unique_name: Deal Flow to Counterparty
+    from:
+      dataset: FACT_DEAL_CASH_FLOW
+      join_columns:
+        - COUNTERPARTY_ID
+    to:
+      dimension: Counterparty
+      level: Counterparty
+  - unique_name: Deal Flow to Milestone
+    from:
+      dataset: FACT_DEAL_CASH_FLOW
+      join_columns:
+        - MILESTONE_ID
+    to:
+      dimension: Milestone
+      level: Milestone
+  - unique_name: Deal Flow to Person
+    from:
+      dataset: FACT_DEAL_CASH_FLOW
+      join_columns:
+        - OWNER_PERSON_ID
+    to:
+      dimension: Person
+      level: Person
+  - unique_name: Shipment to Date
+    from:
+      dataset: FACT_DOSE_SHIPMENT
+      join_columns:
+        - WEEK_DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: Shipment to Clinical Site
+    from:
+      dataset: FACT_DOSE_SHIPMENT
+      join_columns:
+        - SITE_ID
+    to:
+      dimension: Clinical Site
+      level: Site
+  - unique_name: Shipment to Program
+    from:
+      dataset: FACT_DOSE_SHIPMENT
+      join_columns:
+        - PROGRAM_ID
+    to:
+      dimension: Program
+      level: Program
+  - unique_name: Shipment to Counterparty
+    from:
+      dataset: FACT_DOSE_SHIPMENT
+      join_columns:
+        - COUNTERPARTY_ID
+    to:
+      dimension: Counterparty
+      level: Counterparty
+  - unique_name: Enrollment to Date
+    from:
+      dataset: FACT_ENROLLMENT_WEEKLY
+      join_columns:
+        - WEEK_DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: Enrollment to Clinical Site
+    from:
+      dataset: FACT_ENROLLMENT_WEEKLY
+      join_columns:
+        - SITE_ID
+    to:
+      dimension: Clinical Site
+      level: Site
+  - unique_name: Enrollment to Program
+    from:
+      dataset: FACT_ENROLLMENT_WEEKLY
+      join_columns:
+        - PROGRAM_ID
+    to:
+      dimension: Program
+      level: Program
+  - unique_name: Enrollment to Person
+    from:
+      dataset: FACT_ENROLLMENT_WEEKLY
+      join_columns:
+        - OWNER_PERSON_ID
+    to:
+      dimension: Person
+      level: Person
+  - unique_name: Headcount to Date
+    from:
+      dataset: FACT_HEADCOUNT_MONTHLY
+      join_columns:
+        - MONTH_DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: Headcount to Department
+    from:
+      dataset: FACT_HEADCOUNT_MONTHLY
+      join_columns:
+        - DEPARTMENT_ID
+    to:
+      dimension: Department
+      level: Department
+  - unique_name: Headcount to Person
+    from:
+      dataset: FACT_HEADCOUNT_MONTHLY
+      join_columns:
+        - OWNER_PERSON_ID
+    to:
+      dimension: Person
+      level: Person
+  - unique_name: Batch to Date
+    from:
+      dataset: FACT_MANUFACTURING_BATCH
+      join_columns:
+        - SCHEDULED_START_DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: Batch to Original Slot Date
+    from:
+      dataset: FACT_MANUFACTURING_BATCH
+      join_columns:
+        - ORIGINAL_SLOT_DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+    role_play: "Original Slot {0}"
+  - unique_name: Batch to Actual Start Date
+    from:
+      dataset: FACT_MANUFACTURING_BATCH
+      join_columns:
+        - ACTUAL_START_DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+    role_play: "Actual Start {0}"
+  - unique_name: Batch to Program
+    from:
+      dataset: FACT_MANUFACTURING_BATCH
+      join_columns:
+        - PROGRAM_ID
+    to:
+      dimension: Program
+      level: Program
+  - unique_name: Batch to Counterparty
+    from:
+      dataset: FACT_MANUFACTURING_BATCH
+      join_columns:
+        - COUNTERPARTY_ID
+    to:
+      dimension: Counterparty
+      level: Counterparty
+  - unique_name: Batch to Person
+    from:
+      dataset: FACT_MANUFACTURING_BATCH
+      join_columns:
+        - OWNER_PERSON_ID
+    to:
+      dimension: Person
+      level: Person
+  - unique_name: Spend to Date
+    from:
+      dataset: FACT_PROGRAM_SPEND
+      join_columns:
+        - MONTH_DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: Spend to Program
+    from:
+      dataset: FACT_PROGRAM_SPEND
+      join_columns:
+        - PROGRAM_ID
+    to:
+      dimension: Program
+      level: Program
+  - unique_name: Spend to Department
+    from:
+      dataset: FACT_PROGRAM_SPEND
+      join_columns:
+        - DEPARTMENT_ID
+    to:
+      dimension: Department
+      level: Department
+  - unique_name: Spend to Cost Category
+    from:
+      dataset: FACT_PROGRAM_SPEND
+      join_columns:
+        - COST_CATEGORY_ID
+    to:
+      dimension: Cost Category
+      level: Cost Category
+  - unique_name: Spend to Counterparty
+    from:
+      dataset: FACT_PROGRAM_SPEND
+      join_columns:
+        - COUNTERPARTY_ID
+    to:
+      dimension: Counterparty
+      level: Counterparty
+  - unique_name: Spend to Person
+    from:
+      dataset: FACT_PROGRAM_SPEND
+      join_columns:
+        - OWNER_PERSON_ID
+    to:
+      dimension: Person
+      level: Person
+  - unique_name: Lot to Receipt Date
+    from:
+      dataset: FACT_RAW_MATERIAL_LOT
+      join_columns:
+        - RECEIPT_DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+    role_play: "Receipt {0}"
+  - unique_name: Lot to Program
+    from:
+      dataset: FACT_RAW_MATERIAL_LOT
+      join_columns:
+        - PROGRAM_ID
+    to:
+      dimension: Program
+      level: Program
+  - unique_name: Lot to Material
+    from:
+      dataset: FACT_RAW_MATERIAL_LOT
+      join_columns:
+        - MATERIAL_ID
+    to:
+      dimension: Material
+      level: Material
+  - unique_name: Lot to Counterparty
+    from:
+      dataset: FACT_RAW_MATERIAL_LOT
+      join_columns:
+        - SUPPLIER_COUNTERPARTY_ID
+    to:
+      dimension: Counterparty
+      level: Counterparty
+dimensions:
+  - Cash Account
+  - Flow Type
+  - Flow Status
+  - Forecast Flag
+  - Release Status
+  - Batch Purpose
+  - Lot Status
+metrics:
+  - unique_name: Cash_Balance_USD
+  - unique_name: Operating_Outflows_USD
+  - unique_name: TSA_Reimbursements_USD
+  - unique_name: Deal_Proceeds_USD
+  - unique_name: Interest_Income_USD
+  - unique_name: Net_Burn_USD
+  - unique_name: Trailing_3M_Avg_Net_Burn_USD
+  - unique_name: Contract_Value_USD
+  - unique_name: Cash_Received_USD
+  - unique_name: Pending_Confirmation_USD
+  - unique_name: Outstanding_USD
+  - unique_name: Accrued_USD
+  - unique_name: Forecast_USD
+  - unique_name: Partner_Net_Sales_USD
+  - unique_name: Shipments
+  - unique_name: Doses_Shipped
+  - unique_name: Doses_Administered
+  - unique_name: Temperature_Excursions
+  - unique_name: Doses_Lost_To_Excursion
+  - unique_name: Avg_Shipment_Lead_Time_Days
+  - unique_name: Site_Doses_On_Hand
+  - unique_name: Patients_On_Treatment
+  - unique_name: Patients_Screened
+  - unique_name: Patients_Enrolled
+  - unique_name: Planned_Enrollment
+  - unique_name: Headcount
+  - unique_name: Hires
+  - unique_name: Exits
+  - unique_name: Voluntary_Exits
+  - unique_name: Batches
+  - unique_name: Planned_Doses
+  - unique_name: Doses_Produced
+  - unique_name: Released_Doses
+  - unique_name: Released_Clinical_Doses
+  - unique_name: Planned_Output_Grams
+  - unique_name: Output_Grams
+  - unique_name: Released_Grams
+  - unique_name: Avg_Slip_Days
+  - unique_name: Avg_Start_Delay_Days
+  - unique_name: Avg_Yield_Pct
+  - unique_name: Actual_Spend_USD
+  - unique_name: Budget_Spend_USD
+  - unique_name: Partner_Reimbursable_USD
+  - unique_name: Quantity_Received
+  - unique_name: Lot_Cost_USD
+  - unique_name: Quantity_On_Hand
+  - unique_name: Doses_Capacity_On_Hand
+  - unique_name: Avg_Material_Lead_Time_Days
+  - unique_name: Dose_Administration_Rate_Pct
+  - unique_name: Excursion_Loss_Rate_Pct
+  - unique_name: Batch_Release_Rate_Pct
+  - unique_name: Dose_Production_Attainment_Pct
+  - unique_name: Budget_Variance_USD
+  - unique_name: Budget_Attainment_Pct
+  - unique_name: Partner_Reimbursable_Pct
+  - unique_name: Enrollment_vs_Plan_Pct
+  - unique_name: Screen_to_Enroll_Pct
+  - unique_name: Voluntary_Exit_Share_Pct
+  - unique_name: Cash_Runway_Months

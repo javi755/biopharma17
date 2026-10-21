@@ -1,0 +1,178 @@
+tables:
+- name: FACT_RAW_MATERIAL_LOT
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 33
+  row_count_source: sample
+  sample_rows: 33
+  declared_primary_key: [LOT_ID]
+  declared_foreign_keys:
+  - columns: [SUPPLIER_COUNTERPARTY_ID]
+    references:
+      table: DIM_COUNTERPARTY
+      columns: [COUNTERPARTY_ID]
+  - columns: [RECEIPT_DATE_KEY]
+    references:
+      table: DIM_DATE
+      columns: [DATE_KEY]
+  - columns: [MATERIAL_ID]
+    references:
+      table: DIM_MATERIAL
+      columns: [MATERIAL_ID]
+  - columns: [PROGRAM_ID]
+    references:
+      table: DIM_PROGRAM
+      columns: [PROGRAM_ID]
+  columns:
+  - name: LOT_ID
+    type: NUMBER
+    distinct_count: 33
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 33
+    mean: 17.0
+    sample_values: [1, 2, 3]
+    is_unique: true
+  - name: LOT_NUMBER
+    type: TEXT
+    distinct_count: 33
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [MOE-A-2501-01, MOE-GCT-2501-01, DNA-AMID-2501-01]
+    is_unique: true
+  - name: MATERIAL_ID
+    type: NUMBER
+    distinct_count: 9
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 9
+    mean: 4.545455
+    sample_values: [1, 2, 3]
+    is_unique: false
+  - name: SUPPLIER_COUNTERPARTY_ID
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 5
+    max: 8
+    mean: 6.242424
+    sample_values: [5, 6, 7]
+    is_unique: false
+  - name: PROGRAM_ID
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2
+    max: 2
+    mean: 2.0
+    sample_values: [2]
+    is_unique: false
+  - name: RECEIPT_DATE_KEY
+    type: NUMBER
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    min: 20250129
+    max: 20260914
+    mean: 20256558.212121
+    sample_values: [20250129, 20250728, 20250910]
+    is_unique: false
+  - name: ORDER_DATE
+    type: DATE
+    distinct_count: 32
+    distinct_count_source: sample
+    null_count: 0
+    min: '2024-10-15'
+    max: '2026-07-30'
+    sample_values: ['2024-10-15', '2024-11-29', '2024-12-14']
+    is_unique: false
+  - name: LEAD_TIME_DAYS
+    type: NUMBER
+    distinct_count: 27
+    distinct_count_source: sample
+    null_count: 0
+    min: 13
+    max: 116
+    mean: 52.242424
+    sample_values: [106, 61, 46]
+    is_unique: false
+  - name: QUANTITY_RECEIVED
+    type: FLOAT
+    distinct_count: 17
+    distinct_count_source: sample
+    null_count: 0
+    min: 2.7
+    max: 6750
+    mean: 1294.848182
+    sample_values: [2.7, 9.6, 4.4]
+    is_unique: false
+  - name: UNIT_COST_USD
+    type: NUMBER
+    distinct_count: 31
+    distinct_count_source: sample
+    null_count: 0
+    min: 0.9
+    max: 40172.61
+    mean: 12171.298182
+    sample_values: [36310.21, 20951.08, 9193.88]
+    is_unique: false
+  - name: LOT_COST_USD
+    type: NUMBER
+    distinct_count: 32
+    distinct_count_source: sample
+    null_count: 0
+    min: 955.5
+    max: 462300.52
+    mean: 102258.980303
+    sample_values: [98037.57, 201130.37, 40453.07]
+    is_unique: false
+  - name: QUANTITY_PER_BATCH
+    type: FLOAT
+    distinct_count: 8
+    distinct_count_source: sample
+    null_count: 0
+    min: 0.9
+    max: 900
+    mean: 183.69697
+    sample_values: [0.9, 2.4, 1.1]
+    is_unique: false
+  - name: QUANTITY_ON_HAND
+    type: FLOAT
+    distinct_count: 18
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 6750
+    mean: 622.214848
+    sample_values: [0, 12, 900]
+    is_unique: false
+  - name: BATCHES_SUPPORTED_ON_HAND
+    type: FLOAT
+    distinct_count: 12
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 10
+    mean: 2.678788
+    sample_values: [0, 1, 3]
+    is_unique: false
+  - name: DOSES_CAPACITY_ON_HAND
+    type: FLOAT
+    distinct_count: 12
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 2700
+    mean: 723.272727
+    sample_values: [0, 270, 810]
+    is_unique: false
+  - name: LOT_STATUS
+    type: TEXT
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Depleted, Available]
+    is_unique: false

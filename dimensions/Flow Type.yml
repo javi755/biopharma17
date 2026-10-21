@@ -1,0 +1,17 @@
+unique_name: Flow Type
+object_type: dimension
+label: Flow Type
+is_degenerate: true
+level_attributes:
+  - unique_name: Flow Type
+    label: Flow Type
+    dataset: FACT_DEAL_CASH_FLOW
+    name_column: FLOW_TYPE
+    key_columns:
+      - FLOW_TYPE
+hierarchies:
+  - unique_name: Flow Type
+    label: Flow Type
+    levels:
+      - unique_name: Flow Type
+        level_attribute: Flow Type

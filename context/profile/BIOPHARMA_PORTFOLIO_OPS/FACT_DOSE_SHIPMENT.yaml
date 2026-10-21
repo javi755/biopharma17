@@ -1,0 +1,143 @@
+tables:
+- name: FACT_DOSE_SHIPMENT
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 381
+  row_count_source: engine
+  sample_rows: 100
+  declared_primary_key: [SHIPMENT_ID]
+  declared_foreign_keys:
+  - columns: [SITE_ID]
+    references:
+      table: DIM_CLINICAL_SITE
+      columns: [SITE_ID]
+  - columns: [COUNTERPARTY_ID]
+    references:
+      table: DIM_COUNTERPARTY
+      columns: [COUNTERPARTY_ID]
+  - columns: [WEEK_DATE_KEY]
+    references:
+      table: DIM_DATE
+      columns: [DATE_KEY]
+  - columns: [PROGRAM_ID]
+    references:
+      table: DIM_PROGRAM
+      columns: [PROGRAM_ID]
+  columns:
+  - name: SHIPMENT_ID
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 100
+    mean: 50.5
+    sample_values: [1, 2, 3]
+  - name: WEEK_DATE_KEY
+    type: NUMBER
+    distinct_count: 74
+    distinct_count_source: sample
+    null_count: 0
+    min: 20250602
+    max: 20261026
+    mean: 20255062.53
+    sample_values: [20250602, 20250609, 20250616]
+  - name: SITE_ID
+    type: NUMBER
+    distinct_count: 6
+    distinct_count_source: engine
+    null_count: 0
+    min: 1
+    max: 2
+    mean: 1.26
+    sample_values: [1, 2]
+    is_unique: false
+  - name: PROGRAM_ID
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2
+    max: 2
+    mean: 2.0
+    sample_values: [2]
+  - name: COUNTERPARTY_ID
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 4
+    max: 4
+    mean: 4.0
+    sample_values: [4]
+  - name: SHIPMENT_COUNT
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 1
+    mean: 0.28
+    sample_values: [1, 0]
+  - name: DOSES_SHIPPED
+    type: NUMBER
+    distinct_count: 16
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 47
+    mean: 4.13
+    sample_values: [6, 0, 4]
+  - name: DOSES_ADMINISTERED
+    type: NUMBER
+    distinct_count: 12
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 11
+    mean: 3.7
+    sample_values: [0, 1, 3]
+  - name: TEMPERATURE_EXCURSIONS
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 0
+    mean: 0.0
+    sample_values: [0]
+  - name: DOSES_LOST_TO_EXCURSION
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 0
+    mean: 0.0
+    sample_values: [0]
+  - name: SHIPMENT_LEAD_TIME_DAYS
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 72
+    min: 1
+    max: 2
+    mean: 1.428571
+    sample_values: [2, 1]
+  - name: SITE_DOSES_ON_HAND
+    type: NUMBER
+    distinct_count: 27
+    distinct_count_source: sample
+    null_count: 0
+    min: 3
+    max: 46
+    mean: 12.83
+    sample_values: [6, 5, 4]
+  - name: PATIENTS_ON_TREATMENT
+    type: NUMBER
+    distinct_count: 12
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 11
+    mean: 3.81
+    sample_values: [0, 1, 3]

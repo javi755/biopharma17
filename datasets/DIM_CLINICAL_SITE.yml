@@ -1,0 +1,26 @@
+unique_name: DIM_CLINICAL_SITE
+object_type: dataset
+label: DIM_CLINICAL_SITE
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: DIM_CLINICAL_SITE
+columns:
+  - name: SITE_ID
+    data_type: decimal
+  - name: SITE_NAME
+    data_type: string
+  - name: CITY
+    data_type: string
+  - name: STATE
+    data_type: string
+  - name: SITE_LOCATION
+    data_type: string
+  - name: PRINCIPAL_INVESTIGATOR
+    data_type: string
+  - name: ACTIVATION_DATE
+    data_type: date
+  - name: TARGET_ENROLLMENT
+    data_type: decimal
+  - name: SITE_SELECTION_DATE
+    data_type: date
+  - name: STARTUP_DAYS
+    data_type: decimal

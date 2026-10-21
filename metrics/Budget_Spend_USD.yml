@@ -1,0 +1,6 @@
+unique_name: Budget_Spend_USD
+object_type: metric
+label: Budget Spend USD
+dataset: FACT_PROGRAM_SPEND
+column: BUDGET_USD
+calculation_method: sum

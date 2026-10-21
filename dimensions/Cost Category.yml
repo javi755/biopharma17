@@ -1,0 +1,25 @@
+unique_name: Cost Category
+object_type: dimension
+label: Cost Category
+type: standard
+level_attributes:
+  - unique_name: Cost Category Group
+    label: Cost Category Group
+    dataset: DIM_COST_CATEGORY
+    name_column: COST_CATEGORY_GROUP
+    key_columns:
+      - COST_CATEGORY_GROUP
+  - unique_name: Cost Category
+    label: Cost Category
+    dataset: DIM_COST_CATEGORY
+    name_column: COST_CATEGORY_NAME
+    key_columns:
+      - COST_CATEGORY_ID
+hierarchies:
+  - unique_name: Cost Category Hierarchy
+    label: Cost Category Hierarchy
+    levels:
+      - unique_name: Cost Category Group
+        level_attribute: Cost Category Group
+      - unique_name: Cost Category
+        level_attribute: Cost Category

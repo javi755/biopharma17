@@ -1,0 +1,6 @@
+unique_name: Batches
+object_type: metric
+label: Batches
+dataset: FACT_MANUFACTURING_BATCH
+column: BATCH_COUNT
+calculation_method: sum

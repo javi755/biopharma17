@@ -1,0 +1,4 @@
+unique_name: Voluntary_Exit_Share_Pct
+object_type: metric_calc
+label: Voluntary Exit Share %
+expression: "[Voluntary_Exits] / [Exits]"

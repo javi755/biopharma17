@@ -1,0 +1,121 @@
+tables:
+- name: FACT_PROGRAM_SPEND
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  sample_rows: 100
+  declared_primary_key: [SPEND_ID]
+  declared_foreign_keys:
+  - columns: [COST_CATEGORY_ID]
+    references:
+      table: DIM_COST_CATEGORY
+      columns: [COST_CATEGORY_ID]
+  - columns: [COUNTERPARTY_ID]
+    references:
+      table: DIM_COUNTERPARTY
+      columns: [COUNTERPARTY_ID]
+  - columns: [MONTH_DATE_KEY]
+    references:
+      table: DIM_DATE
+      columns: [DATE_KEY]
+  - columns: [DEPARTMENT_ID]
+    references:
+      table: DIM_DEPARTMENT
+      columns: [DEPARTMENT_ID]
+  - columns: [OWNER_PERSON_ID]
+    references:
+      table: DIM_PERSON
+      columns: [PERSON_ID]
+  - columns: [PROGRAM_ID]
+    references:
+      table: DIM_PROGRAM
+      columns: [PROGRAM_ID]
+  columns:
+  - name: SPEND_ID
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 100
+    mean: 50.5
+    sample_values: [1, 2, 3]
+  - name: MONTH_DATE_KEY
+    type: NUMBER
+    distinct_count: 6
+    distinct_count_source: sample
+    null_count: 0
+    min: 20250131
+    max: 20250630
+    mean: 20250345.19
+    sample_values: [20250131, 20250228, 20250331]
+  - name: PROGRAM_ID
+    type: NUMBER
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 5
+    mean: 3.12
+    sample_values: [1, 2, 3]
+  - name: DEPARTMENT_ID
+    type: NUMBER
+    distinct_count: 9
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 9
+    mean: 3.59
+    sample_values: [1, 2, 3]
+  - name: COST_CATEGORY_ID
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 4
+    mean: 2.34
+    sample_values: [1, 2, 3]
+  - name: COUNTERPARTY_ID
+    type: NUMBER
+    distinct_count: 3
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 3
+    mean: 0.27
+    sample_values: [0, 2, 3]
+  - name: OWNER_PERSON_ID
+    type: NUMBER
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 7
+    mean: 3.42
+    sample_values: [2, 4, 7]
+  - name: ACTUAL_USD
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 75350.28
+    max: 3317693.29
+    mean: 744178.7092
+    sample_values: [1168472.11, 880589.73, 2816000]
+  - name: BUDGET_USD
+    type: NUMBER
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    min: 80000
+    max: 3200000
+    mean: 749000.0
+    sample_values: [1100000, 900000, 3200000]
+  - name: PARTNER_REIMBURSABLE_USD
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 0
+    mean: 0.0
+    sample_values: [0]

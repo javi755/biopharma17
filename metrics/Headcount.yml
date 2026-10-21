@@ -1,0 +1,10 @@
+unique_name: Headcount
+object_type: metric
+label: Headcount
+dataset: FACT_HEADCOUNT_MONTHLY
+column: HEADCOUNT
+calculation_method: sum
+semi_additive:
+  position: last
+  relationships:
+    - Headcount to Date

@@ -1,0 +1,65 @@
+tables:
+- name: DIM_MILESTONE
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 8
+  row_count_source: sample
+  sample_rows: 8
+  declared_primary_key: [MILESTONE_ID]
+  columns:
+  - name: MILESTONE_ID
+    type: NUMBER
+    distinct_count: 8
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 7
+    mean: 3.5
+    sample_values: [0, 1, 2]
+    is_unique: true
+  - name: MILESTONE_CODE
+    type: TEXT
+    distinct_count: 8
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [N/A, MS-01, MS-02]
+    is_unique: true
+  - name: MILESTONE_NAME
+    type: TEXT
+    distinct_count: 8
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Not a milestone, Phase 2 clinical database transferred to GSK,
+      Manufacturing technology transfer complete]
+    is_unique: true
+  - name: MILESTONE_TYPE
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Not applicable, Development, Regulatory]
+    is_unique: false
+  - name: TRIGGER_DEFINITION
+    type: TEXT
+    distinct_count: 8
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Not applicable, Locked CB-101 phase 2 database delivered and accepted
+        by GSK, Three GMP batch records executed at GSK site; acceptance per TSA Schedule
+        4]
+    is_unique: true
+  - name: MILESTONE_DATE
+    type: DATE
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 1
+    min: '2026-08-14'
+    max: '2030-12-31'
+    sample_values: ['2026-08-14', '2026-09-30', '2027-03-31']
+    is_unique: false
+  - name: CURRENT_STATUS
+    type: TEXT
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Not applicable, Paid, Achieved - pending GSK confirmation]
+    is_unique: false

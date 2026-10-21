@@ -1,0 +1,4 @@
+unique_name: Dose_Administration_Rate_Pct
+object_type: metric_calc
+label: Dose Administration Rate %
+expression: "[Doses_Administered] / [Doses_Shipped]"

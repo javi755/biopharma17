@@ -1,0 +1,6 @@
+unique_name: Output_Grams
+object_type: metric
+label: Output Grams
+dataset: FACT_MANUFACTURING_BATCH
+column: OUTPUT_GRAMS
+calculation_method: sum

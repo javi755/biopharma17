@@ -1,0 +1,95 @@
+tables:
+- name: FACT_ENROLLMENT_WEEKLY
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  sample_rows: 100
+  declared_primary_key: [ENROLLMENT_ID]
+  declared_foreign_keys:
+  - columns: [SITE_ID]
+    references:
+      table: DIM_CLINICAL_SITE
+      columns: [SITE_ID]
+  - columns: [WEEK_DATE_KEY]
+    references:
+      table: DIM_DATE
+      columns: [DATE_KEY]
+  - columns: [OWNER_PERSON_ID]
+    references:
+      table: DIM_PERSON
+      columns: [PERSON_ID]
+  - columns: [PROGRAM_ID]
+    references:
+      table: DIM_PROGRAM
+      columns: [PROGRAM_ID]
+  columns:
+  - name: ENROLLMENT_ID
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 100
+    mean: 50.5
+    sample_values: [1, 2, 3]
+  - name: WEEK_DATE_KEY
+    type: NUMBER
+    distinct_count: 74
+    distinct_count_source: sample
+    null_count: 0
+    min: 20250602
+    max: 20261026
+    mean: 20255062.53
+    sample_values: [20250602, 20250609, 20250616]
+  - name: SITE_ID
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 2
+    mean: 1.26
+    sample_values: [1, 2]
+  - name: PROGRAM_ID
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2
+    max: 2
+    mean: 2.0
+    sample_values: [2]
+  - name: OWNER_PERSON_ID
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 4
+    max: 4
+    mean: 4.0
+    sample_values: [4]
+  - name: PATIENTS_SCREENED
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 3
+    mean: 0.45
+    sample_values: [0, 1, 2]
+  - name: PATIENTS_ENROLLED
+    type: NUMBER
+    distinct_count: 3
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 2
+    mean: 0.14
+    sample_values: [0, 1, 2]
+  - name: PLANNED_ENROLLMENT
+    type: FLOAT
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 0.1243
+    max: 0.1456
+    mean: 0.140062
+    sample_values: [0.1456, 0.1243]

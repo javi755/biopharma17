@@ -1,0 +1,92 @@
+tables:
+- name: DIM_CLINICAL_SITE
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 6
+  row_count_source: sample
+  sample_rows: 6
+  declared_primary_key: [SITE_ID]
+  columns:
+  - name: SITE_ID
+    type: NUMBER
+    distinct_count: 6
+    distinct_count_source: engine
+    null_count: 0
+    min: 1
+    max: 6
+    mean: 3.5
+    sample_values: [1, 2, 3]
+    is_unique: true
+  - name: SITE_NAME
+    type: TEXT
+    distinct_count: 6
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Mass General Brigham, Carolina Neuromuscular Institute, Great
+        Lakes Neurology Clinic]
+    is_unique: true
+  - name: CITY
+    type: TEXT
+    distinct_count: 6
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Boston, Raleigh, Chicago]
+    is_unique: true
+  - name: STATE
+    type: TEXT
+    distinct_count: 6
+    distinct_count_source: engine
+    null_count: 0
+    sample_values: [MA, NC, IL]
+    is_unique: true
+  - name: SITE_LOCATION
+    type: TEXT
+    distinct_count: 6
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: ['Boston, MA', 'Raleigh, NC', 'Chicago, IL']
+    is_unique: true
+  - name: PRINCIPAL_INVESTIGATOR
+    type: TEXT
+    distinct_count: 6
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Dr. Lila Mensah, Dr. Marcus Whitfield, Dr. Hannah Kowalski]
+    is_unique: true
+  - name: ACTIVATION_DATE
+    type: DATE
+    distinct_count: 6
+    distinct_count_source: sample
+    null_count: 0
+    min: '2025-06-02'
+    max: '2026-01-12'
+    sample_values: ['2025-06-02', '2025-06-16', '2025-07-07']
+    is_unique: true
+  - name: TARGET_ENROLLMENT
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 6
+    max: 12
+    mean: 8.333333
+    sample_values: [12, 10, 8]
+    is_unique: false
+  - name: SITE_SELECTION_DATE
+    type: DATE
+    distinct_count: 6
+    distinct_count_source: sample
+    null_count: 0
+    min: '2025-01-06'
+    max: '2025-07-21'
+    sample_values: ['2025-01-06', '2025-01-20', '2025-02-10']
+    is_unique: true
+  - name: STARTUP_DAYS
+    type: NUMBER
+    distinct_count: 3
+    distinct_count_source: sample
+    null_count: 0
+    min: 147
+    max: 175
+    mean: 154.0
+    sample_values: [147, 154, 175]
+    is_unique: false

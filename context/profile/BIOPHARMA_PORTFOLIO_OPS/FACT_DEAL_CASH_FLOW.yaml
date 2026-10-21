@@ -1,0 +1,180 @@
+tables:
+- name: FACT_DEAL_CASH_FLOW
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 31
+  row_count_source: sample
+  sample_rows: 31
+  declared_primary_key: [FLOW_ID]
+  declared_foreign_keys:
+  - columns: [COUNTERPARTY_ID]
+    references:
+      table: DIM_COUNTERPARTY
+      columns: [COUNTERPARTY_ID]
+  - columns: [FLOW_DATE_KEY]
+    references:
+      table: DIM_DATE
+      columns: [DATE_KEY]
+  - columns: [MILESTONE_ID]
+    references:
+      table: DIM_MILESTONE
+      columns: [MILESTONE_ID]
+  - columns: [OWNER_PERSON_ID]
+    references:
+      table: DIM_PERSON
+      columns: [PERSON_ID]
+  - columns: [PROGRAM_ID]
+    references:
+      table: DIM_PROGRAM
+      columns: [PROGRAM_ID]
+  columns:
+  - name: FLOW_ID
+    type: NUMBER
+    distinct_count: 31
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 31
+    mean: 16.0
+    sample_values: [1, 2, 3]
+    is_unique: true
+  - name: FLOW_DATE_KEY
+    type: NUMBER
+    distinct_count: 21
+    distinct_count_source: sample
+    null_count: 0
+    min: 20260316
+    max: 20301231
+    mean: 20274325.870968
+    sample_values: [20260316, 20260430, 20260531]
+    is_unique: false
+  - name: PROGRAM_ID
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 1
+    mean: 1.0
+    sample_values: [1]
+    is_unique: false
+  - name: COUNTERPARTY_ID
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 1
+    mean: 1.0
+    sample_values: [1]
+    is_unique: false
+  - name: MILESTONE_ID
+    type: NUMBER
+    distinct_count: 8
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 7
+    mean: 0.903226
+    sample_values: [0, 1, 2]
+    is_unique: false
+  - name: OWNER_PERSON_ID
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 3
+    max: 6
+    mean: 3.677419
+    sample_values: [3, 6]
+    is_unique: false
+  - name: FLOW_TYPE
+    type: TEXT
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Upfront payment, Royalty, TSA reimbursement]
+    is_unique: false
+  - name: FLOW_STATUS
+    type: TEXT
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Paid, Accrued (estimate), Achieved - pending GSK confirmation]
+    is_unique: false
+  - name: CONTRACT_VALUE_USD
+    type: NUMBER
+    distinct_count: 8
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 1150000000
+    mean: 66129032.258065
+    sample_values: [1150000000, 0, 50000000]
+    is_unique: false
+  - name: CASH_RECEIVED_USD
+    type: NUMBER
+    distinct_count: 9
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 1150000000
+    mean: 39113706.505161
+    sample_values: [1150000000, 0, 2035611.24]
+    is_unique: false
+  - name: PENDING_CONFIRMATION_USD
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 75000000
+    mean: 2419354.83871
+    sample_values: [0, 75000000]
+    is_unique: false
+  - name: OUTSTANDING_USD
+    type: NUMBER
+    distinct_count: 6
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 200000000
+    mean: 27419354.83871
+    sample_values: [0, 75000000, 125000000]
+    is_unique: false
+  - name: ACCRUED_USD
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 2035481.13
+    mean: 65660.681613
+    sample_values: [0, 2035481.13]
+    is_unique: false
+  - name: FORECAST_USD
+    type: NUMBER
+    distinct_count: 10
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 32500000
+    mean: 5064516.129032
+    sample_values: [0, 2000000, 6000000]
+    is_unique: false
+  - name: PARTNER_NET_SALES_USD
+    type: NUMBER
+    distinct_count: 10
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 650000000
+    mean: 101290322.580645
+    sample_values: [0, 40000000, 120000000]
+    is_unique: false
+  - name: IS_FORECAST
+    type: BOOLEAN
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: ['FALSE', 'TRUE']
+    is_unique: false

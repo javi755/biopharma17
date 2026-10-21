@@ -1,0 +1,38 @@
+unique_name: FACT_RAW_MATERIAL_LOT
+object_type: dataset
+label: FACT_RAW_MATERIAL_LOT
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: FACT_RAW_MATERIAL_LOT
+columns:
+  - name: LOT_ID
+    data_type: decimal
+  - name: LOT_NUMBER
+    data_type: string
+  - name: MATERIAL_ID
+    data_type: decimal
+  - name: SUPPLIER_COUNTERPARTY_ID
+    data_type: decimal
+  - name: PROGRAM_ID
+    data_type: decimal
+  - name: RECEIPT_DATE_KEY
+    data_type: decimal
+  - name: ORDER_DATE
+    data_type: date
+  - name: LEAD_TIME_DAYS
+    data_type: decimal
+  - name: QUANTITY_RECEIVED
+    data_type: double
+  - name: UNIT_COST_USD
+    data_type: decimal
+  - name: LOT_COST_USD
+    data_type: decimal
+  - name: QUANTITY_PER_BATCH
+    data_type: double
+  - name: QUANTITY_ON_HAND
+    data_type: double
+  - name: BATCHES_SUPPORTED_ON_HAND
+    data_type: double
+  - name: DOSES_CAPACITY_ON_HAND
+    data_type: double
+  - name: LOT_STATUS
+    data_type: string

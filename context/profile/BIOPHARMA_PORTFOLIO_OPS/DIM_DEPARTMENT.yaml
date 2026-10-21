@@ -1,0 +1,39 @@
+tables:
+- name: DIM_DEPARTMENT
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 9
+  row_count_source: sample
+  sample_rows: 9
+  declared_primary_key: [DEPARTMENT_ID]
+  columns:
+  - name: DEPARTMENT_ID
+    type: NUMBER
+    distinct_count: 9
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 9
+    mean: 5.0
+    sample_values: [1, 2, 3]
+    is_unique: true
+  - name: DEPARTMENT_NAME
+    type: TEXT
+    distinct_count: 9
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Research, Technical Operations (CMC), Clinical Development]
+    is_unique: true
+  - name: FUNCTION_GROUP
+    type: TEXT
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [R&D, G&A]
+    is_unique: false
+  - name: DEPARTMENT_HEAD_NAME
+    type: TEXT
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Priya Raman, Elena Voss, Kenji Okada]
+    is_unique: false

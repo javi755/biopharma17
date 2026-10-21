@@ -1,0 +1,6 @@
+unique_name: Avg_Material_Lead_Time_Days
+object_type: metric
+label: Avg Material Lead Time Days
+dataset: FACT_RAW_MATERIAL_LOT
+column: LEAD_TIME_DAYS
+calculation_method: average

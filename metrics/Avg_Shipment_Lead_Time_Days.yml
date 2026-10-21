@@ -1,0 +1,6 @@
+unique_name: Avg_Shipment_Lead_Time_Days
+object_type: metric
+label: Avg Shipment Lead Time Days
+dataset: FACT_DOSE_SHIPMENT
+column: SHIPMENT_LEAD_TIME_DAYS
+calculation_method: average

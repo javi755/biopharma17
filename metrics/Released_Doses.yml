@@ -1,0 +1,6 @@
+unique_name: Released_Doses
+object_type: metric
+label: Released Doses
+dataset: FACT_MANUFACTURING_BATCH
+column: RELEASED_DOSES
+calculation_method: sum

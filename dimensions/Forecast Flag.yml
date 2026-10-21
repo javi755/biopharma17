@@ -1,0 +1,17 @@
+unique_name: Forecast Flag
+object_type: dimension
+label: Forecast Flag
+is_degenerate: true
+level_attributes:
+  - unique_name: Forecast Flag
+    label: Forecast Flag
+    dataset: FACT_DEAL_CASH_FLOW
+    name_column: IS_FORECAST
+    key_columns:
+      - IS_FORECAST
+hierarchies:
+  - unique_name: Forecast Flag
+    label: Forecast Flag
+    levels:
+      - unique_name: Forecast Flag
+        level_attribute: Forecast Flag

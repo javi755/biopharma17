@@ -1,0 +1,6 @@
+unique_name: Pending_Confirmation_USD
+object_type: metric
+label: Pending Confirmation USD
+dataset: FACT_DEAL_CASH_FLOW
+column: PENDING_CONFIRMATION_USD
+calculation_method: sum

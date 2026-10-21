@@ -1,0 +1,4 @@
+unique_name: Excursion_Loss_Rate_Pct
+object_type: metric_calc
+label: Excursion Loss Rate %
+expression: "[Doses_Lost_To_Excursion] / [Doses_Shipped]"

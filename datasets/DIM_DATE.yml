@@ -1,0 +1,44 @@
+unique_name: DIM_DATE
+object_type: dataset
+label: DIM_DATE
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: DIM_DATE
+columns:
+  - name: DATE_KEY
+    data_type: decimal
+  - name: FULL_DATE
+    data_type: date
+  - name: YEAR_NUM
+    data_type: decimal
+  - name: QUARTER_NUM
+    data_type: decimal
+  - name: QUARTER_KEY
+    data_type: decimal
+  - name: QUARTER_NAME
+    data_type: string
+  - name: MONTH_NUM
+    data_type: decimal
+  - name: MONTH_KEY
+    data_type: decimal
+  - name: MONTH_NAME
+    data_type: string
+  - name: MONTH_START_DATE
+    data_type: date
+  - name: WEEK_KEY
+    data_type: decimal
+  - name: WEEK_NAME
+    data_type: string
+  - name: DAY_OF_WEEK_NAME
+    data_type: string
+  - name: IS_MONTH_END
+    data_type: boolean
+  - name: IS_ACTUALS_PERIOD
+    data_type: boolean
+  - name: RELATIVE_YEAR
+    data_type: string
+  - name: RELATIVE_QUARTER
+    data_type: string
+  - name: RELATIVE_MONTH
+    data_type: string
+  - name: ASSET_SALE_PERIOD
+    data_type: string

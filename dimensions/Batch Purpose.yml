@@ -1,0 +1,17 @@
+unique_name: Batch Purpose
+object_type: dimension
+label: Batch Purpose
+is_degenerate: true
+level_attributes:
+  - unique_name: Batch Purpose
+    label: Batch Purpose
+    dataset: FACT_MANUFACTURING_BATCH
+    name_column: BATCH_PURPOSE
+    key_columns:
+      - BATCH_PURPOSE
+hierarchies:
+  - unique_name: Batch Purpose
+    label: Batch Purpose
+    levels:
+      - unique_name: Batch Purpose
+        level_attribute: Batch Purpose

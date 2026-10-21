@@ -1,0 +1,6 @@
+unique_name: Partner_Reimbursable_USD
+object_type: metric
+label: Partner Reimbursable USD
+dataset: FACT_PROGRAM_SPEND
+column: PARTNER_REIMBURSABLE_USD
+calculation_method: sum

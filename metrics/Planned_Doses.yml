@@ -1,0 +1,6 @@
+unique_name: Planned_Doses
+object_type: metric
+label: Planned Doses
+dataset: FACT_MANUFACTURING_BATCH
+column: PLANNED_DOSES
+calculation_method: sum

@@ -1,0 +1,6 @@
+unique_name: Forecast_USD
+object_type: metric
+label: Forecast USD
+dataset: FACT_DEAL_CASH_FLOW
+column: FORECAST_USD
+calculation_method: sum

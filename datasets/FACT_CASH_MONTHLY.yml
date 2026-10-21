@@ -1,0 +1,26 @@
+unique_name: FACT_CASH_MONTHLY
+object_type: dataset
+label: FACT_CASH_MONTHLY
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: FACT_CASH_MONTHLY
+columns:
+  - name: CASH_ID
+    data_type: decimal
+  - name: MONTH_DATE_KEY
+    data_type: decimal
+  - name: CASH_ACCOUNT
+    data_type: string
+  - name: CASH_BALANCE_USD
+    data_type: decimal
+  - name: OPERATING_OUTFLOWS_USD
+    data_type: decimal
+  - name: TSA_REIMBURSEMENTS_USD
+    data_type: decimal
+  - name: DEAL_PROCEEDS_USD
+    data_type: decimal
+  - name: INTEREST_INCOME_USD
+    data_type: decimal
+  - name: NET_BURN_USD
+    data_type: decimal
+  - name: TRAILING_3M_AVG_NET_BURN_USD
+    data_type: decimal

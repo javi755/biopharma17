@@ -1,0 +1,24 @@
+unique_name: DIM_PROGRAM
+object_type: dataset
+label: DIM_PROGRAM
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: DIM_PROGRAM
+columns:
+  - name: PROGRAM_ID
+    data_type: decimal
+  - name: PROGRAM_CODE
+    data_type: string
+  - name: PROGRAM_NAME
+    data_type: string
+  - name: PROGRAM_DISPLAY_NAME
+    data_type: string
+  - name: MODALITY
+    data_type: string
+  - name: INDICATION
+    data_type: string
+  - name: DEVELOPMENT_STAGE
+    data_type: string
+  - name: PROGRAM_STATUS
+    data_type: string
+  - name: PROGRAM_OWNER_NAME
+    data_type: string

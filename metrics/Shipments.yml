@@ -1,0 +1,6 @@
+unique_name: Shipments
+object_type: metric
+label: Shipments
+dataset: FACT_DOSE_SHIPMENT
+column: SHIPMENT_COUNT
+calculation_method: sum

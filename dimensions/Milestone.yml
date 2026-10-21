@@ -1,0 +1,31 @@
+unique_name: Milestone
+object_type: dimension
+label: Milestone
+type: standard
+level_attributes:
+  - unique_name: Milestone Type
+    label: Milestone Type
+    dataset: DIM_MILESTONE
+    name_column: MILESTONE_TYPE
+    key_columns:
+      - MILESTONE_TYPE
+  - unique_name: Milestone
+    label: Milestone
+    dataset: DIM_MILESTONE
+    name_column: MILESTONE_NAME
+    key_columns:
+      - MILESTONE_ID
+  - unique_name: Milestone Status
+    label: Milestone Status
+    dataset: DIM_MILESTONE
+    name_column: CURRENT_STATUS
+    key_columns:
+      - CURRENT_STATUS
+hierarchies:
+  - unique_name: Milestone Hierarchy
+    label: Milestone Hierarchy
+    levels:
+      - unique_name: Milestone Type
+        level_attribute: Milestone Type
+      - unique_name: Milestone
+        level_attribute: Milestone

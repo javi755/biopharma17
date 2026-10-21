@@ -1,0 +1,6 @@
+unique_name: Released_Grams
+object_type: metric
+label: Released Grams
+dataset: FACT_MANUFACTURING_BATCH
+column: RELEASED_GRAMS
+calculation_method: sum

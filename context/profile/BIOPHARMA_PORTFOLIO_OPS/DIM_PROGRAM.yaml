@@ -1,0 +1,75 @@
+tables:
+- name: DIM_PROGRAM
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 5
+  row_count_source: sample
+  sample_rows: 5
+  declared_primary_key: [PROGRAM_ID]
+  columns:
+  - name: PROGRAM_ID
+    type: NUMBER
+    distinct_count: 5
+    distinct_count_source: engine
+    null_count: 0
+    min: 1
+    max: 5
+    mean: 3.0
+    sample_values: [1, 2, 3]
+    is_unique: true
+  - name: PROGRAM_CODE
+    type: TEXT
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [CB-101, CB-201, CB-214]
+    is_unique: true
+  - name: PROGRAM_NAME
+    type: TEXT
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [lexabamab, rivastide, CB-214]
+    is_unique: true
+  - name: PROGRAM_DISPLAY_NAME
+    type: TEXT
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [CB-101 (lexabamab), CB-201 (rivastide), CB-214]
+    is_unique: true
+  - name: MODALITY
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Monoclonal antibody, Antisense oligonucleotide, Biologic]
+    is_unique: false
+  - name: INDICATION
+    type: TEXT
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Alzheimer's disease (amyloid plaque), Genetic ALS, Parkinson's
+        disease (alpha-synuclein)]
+    is_unique: true
+  - name: DEVELOPMENT_STAGE
+    type: TEXT
+    distinct_count: 5
+    distinct_count_source: engine
+    null_count: 0
+    sample_values: [Phase 2, Phase 1, Preclinical (pre-IND)]
+    is_unique: true
+  - name: PROGRAM_STATUS
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Divested to GSK (Mar 2026), Active, Active - kill-or-partner review]
+    is_unique: false
+  - name: PROGRAM_OWNER_NAME
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Amira Solano, Elena Voss, Priya Raman]
+    is_unique: false

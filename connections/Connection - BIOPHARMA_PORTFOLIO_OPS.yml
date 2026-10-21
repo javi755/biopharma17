@@ -1,0 +1,6 @@
+unique_name: Connection - BIOPHARMA_PORTFOLIO_OPS
+object_type: connection
+label: Connection - BIOPHARMA_PORTFOLIO_OPS
+as_connection: Snowflake Partner
+database: SUPPLY_CHAIN_OTD_DEMO
+schema: BIOPHARMA_PORTFOLIO_OPS

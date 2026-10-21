@@ -1,0 +1,6 @@
+unique_name: Lot_Cost_USD
+object_type: metric
+label: Lot Cost USD
+dataset: FACT_RAW_MATERIAL_LOT
+column: LOT_COST_USD
+calculation_method: sum

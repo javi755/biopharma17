@@ -1,0 +1,145 @@
+tables:
+- name: DIM_DATE
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  sample_rows: 100
+  declared_primary_key: [DATE_KEY]
+  columns:
+  - name: DATE_KEY
+    type: NUMBER
+    distinct_count: 2122
+    distinct_count_source: engine
+    null_count: 0
+    min: 20250101
+    max: 20250410
+    mean: 20250234.53
+    sample_values: [20250101, 20250102, 20250103]
+  - name: FULL_DATE
+    type: DATE
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: '2025-01-01'
+    max: '2025-04-10'
+    sample_values: ['2025-01-01', '2025-01-02', '2025-01-03']
+  - name: YEAR_NUM
+    type: NUMBER
+    distinct_count: 6
+    distinct_count_source: engine
+    null_count: 0
+    min: 2025
+    max: 2025
+    mean: 2025.0
+    sample_values: [2025]
+  - name: QUARTER_NUM
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 2
+    mean: 1.1
+    sample_values: [1, 2]
+  - name: QUARTER_KEY
+    type: NUMBER
+    distinct_count: 24
+    distinct_count_source: engine
+    null_count: 0
+    min: 20251
+    max: 20252
+    mean: 20251.1
+    sample_values: [20251, 20252]
+  - name: QUARTER_NAME
+    type: TEXT
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [2025 Q1, 2025 Q2]
+  - name: MONTH_NUM
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 4
+    mean: 2.2
+    sample_values: [1, 2, 3]
+  - name: MONTH_KEY
+    type: NUMBER
+    distinct_count: 72
+    distinct_count_source: engine
+    null_count: 0
+    min: 202501
+    max: 202504
+    mean: 202502.2
+    sample_values: [202501, 202502, 202503]
+  - name: MONTH_NAME
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Jan 2025, Feb 2025, Mar 2025]
+  - name: MONTH_START_DATE
+    type: DATE
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: '2025-01-01'
+    max: '2025-04-01'
+    sample_values: ['2025-01-01', '2025-02-01', '2025-03-01']
+  - name: WEEK_KEY
+    type: NUMBER
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    min: 20241230
+    max: 20250407
+    mean: 20249781.13
+    sample_values: [20241230, 20250106, 20250113]
+  - name: WEEK_NAME
+    type: TEXT
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Week of 2024-12-30, Week of 2025-01-06, Week of 2025-01-13]
+  - name: DAY_OF_WEEK_NAME
+    type: TEXT
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Wednesday, Thursday, Friday]
+  - name: IS_MONTH_END
+    type: BOOLEAN
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: ['FALSE', 'TRUE']
+  - name: IS_ACTUALS_PERIOD
+    type: BOOLEAN
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: ['TRUE']
+  - name: RELATIVE_YEAR
+    type: TEXT
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Last Year]
+  - name: RELATIVE_QUARTER
+    type: TEXT
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Earlier Quarter]
+  - name: RELATIVE_MONTH
+    type: TEXT
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Earlier Month]
+  - name: ASSET_SALE_PERIOD
+    type: TEXT
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Pre-sale]

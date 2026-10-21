@@ -1,0 +1,10 @@
+unique_name: Site_Doses_On_Hand
+object_type: metric
+label: Site Doses On Hand
+dataset: FACT_DOSE_SHIPMENT
+column: SITE_DOSES_ON_HAND
+calculation_method: sum
+semi_additive:
+  position: last
+  relationships:
+    - Shipment to Date

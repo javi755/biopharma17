@@ -1,0 +1,6 @@
+unique_name: Patients_Enrolled
+object_type: metric
+label: Patients Enrolled
+dataset: FACT_ENROLLMENT_WEEKLY
+column: PATIENTS_ENROLLED
+calculation_method: sum

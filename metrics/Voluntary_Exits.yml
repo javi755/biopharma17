@@ -1,0 +1,6 @@
+unique_name: Voluntary_Exits
+object_type: metric
+label: Voluntary Exits
+dataset: FACT_HEADCOUNT_MONTHLY
+column: VOLUNTARY_EXITS
+calculation_method: sum

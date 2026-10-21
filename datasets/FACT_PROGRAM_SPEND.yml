@@ -1,0 +1,26 @@
+unique_name: FACT_PROGRAM_SPEND
+object_type: dataset
+label: FACT_PROGRAM_SPEND
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: FACT_PROGRAM_SPEND
+columns:
+  - name: SPEND_ID
+    data_type: decimal
+  - name: MONTH_DATE_KEY
+    data_type: decimal
+  - name: PROGRAM_ID
+    data_type: decimal
+  - name: DEPARTMENT_ID
+    data_type: decimal
+  - name: COST_CATEGORY_ID
+    data_type: decimal
+  - name: COUNTERPARTY_ID
+    data_type: decimal
+  - name: OWNER_PERSON_ID
+    data_type: decimal
+  - name: ACTUAL_USD
+    data_type: decimal
+  - name: BUDGET_USD
+    data_type: decimal
+  - name: PARTNER_REIMBURSABLE_USD
+    data_type: decimal

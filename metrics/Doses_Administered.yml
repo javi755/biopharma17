@@ -1,0 +1,6 @@
+unique_name: Doses_Administered
+object_type: metric
+label: Doses Administered
+dataset: FACT_DOSE_SHIPMENT
+column: DOSES_ADMINISTERED
+calculation_method: sum

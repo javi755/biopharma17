@@ -1,0 +1,6 @@
+unique_name: Avg_Slip_Days
+object_type: metric
+label: Avg Slip Days
+dataset: FACT_MANUFACTURING_BATCH
+column: SLIP_DAYS
+calculation_method: average

@@ -1,0 +1,6 @@
+unique_name: Avg_Start_Delay_Days
+object_type: metric
+label: Avg Start Delay Days
+dataset: FACT_MANUFACTURING_BATCH
+column: START_DELAY_DAYS
+calculation_method: average

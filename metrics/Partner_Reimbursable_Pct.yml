@@ -1,0 +1,4 @@
+unique_name: Partner_Reimbursable_Pct
+object_type: metric_calc
+label: Partner Reimbursable %
+expression: "[Partner_Reimbursable_USD] / [Actual_Spend_USD]"

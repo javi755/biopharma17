@@ -1,0 +1,6 @@
+unique_name: Net_Burn_USD
+object_type: metric
+label: Net Burn USD
+dataset: FACT_CASH_MONTHLY
+column: NET_BURN_USD
+calculation_method: sum

@@ -1,0 +1,6 @@
+unique_name: Temperature_Excursions
+object_type: metric
+label: Temperature Excursions
+dataset: FACT_DOSE_SHIPMENT
+column: TEMPERATURE_EXCURSIONS
+calculation_method: sum

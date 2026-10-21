@@ -1,0 +1,16 @@
+unique_name: DIM_PERSON
+object_type: dataset
+label: DIM_PERSON
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: DIM_PERSON
+columns:
+  - name: PERSON_ID
+    data_type: decimal
+  - name: PERSON_NAME
+    data_type: string
+  - name: TITLE
+    data_type: string
+  - name: IS_CLOSE_COHORT
+    data_type: boolean
+  - name: EMAIL
+    data_type: string

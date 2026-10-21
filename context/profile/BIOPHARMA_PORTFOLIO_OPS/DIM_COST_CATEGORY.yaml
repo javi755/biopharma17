@@ -1,0 +1,39 @@
+tables:
+- name: DIM_COST_CATEGORY
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 5
+  row_count_source: sample
+  sample_rows: 5
+  declared_primary_key: [COST_CATEGORY_ID]
+  columns:
+  - name: COST_CATEGORY_ID
+    type: NUMBER
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 5
+    mean: 3.0
+    sample_values: [1, 2, 3]
+    is_unique: true
+  - name: COST_CATEGORY_NAME
+    type: TEXT
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [R&D, CMC / Manufacturing, Clinical]
+    is_unique: true
+  - name: COST_CATEGORY_GROUP
+    type: TEXT
+    distinct_count: 3
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [R&D opex, G&A opex, Transition services (GSK)]
+    is_unique: false
+  - name: IS_PARTNER_REIMBURSABLE
+    type: BOOLEAN
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: ['FALSE', 'TRUE']
+    is_unique: false

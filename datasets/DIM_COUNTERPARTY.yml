@@ -1,0 +1,16 @@
+unique_name: DIM_COUNTERPARTY
+object_type: dataset
+label: DIM_COUNTERPARTY
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: DIM_COUNTERPARTY
+columns:
+  - name: COUNTERPARTY_ID
+    data_type: decimal
+  - name: COUNTERPARTY_NAME
+    data_type: string
+  - name: COUNTERPARTY_TYPE
+    data_type: string
+  - name: PRIMARY_CONTACT
+    data_type: string
+  - name: RELATIONSHIP_OWNER_NAME
+    data_type: string

@@ -1,0 +1,20 @@
+unique_name: DIM_MILESTONE
+object_type: dataset
+label: DIM_MILESTONE
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: DIM_MILESTONE
+columns:
+  - name: MILESTONE_ID
+    data_type: decimal
+  - name: MILESTONE_CODE
+    data_type: string
+  - name: MILESTONE_NAME
+    data_type: string
+  - name: MILESTONE_TYPE
+    data_type: string
+  - name: TRIGGER_DEFINITION
+    data_type: string
+  - name: MILESTONE_DATE
+    data_type: date
+  - name: CURRENT_STATUS
+    data_type: string

@@ -1,0 +1,17 @@
+unique_name: Cash Account
+object_type: dimension
+label: Cash Account
+is_degenerate: true
+level_attributes:
+  - unique_name: Cash Account
+    label: Cash Account
+    dataset: FACT_CASH_MONTHLY
+    name_column: CASH_ACCOUNT
+    key_columns:
+      - CASH_ACCOUNT
+hierarchies:
+  - unique_name: Cash Account
+    label: Cash Account
+    levels:
+      - unique_name: Cash Account
+        level_attribute: Cash Account

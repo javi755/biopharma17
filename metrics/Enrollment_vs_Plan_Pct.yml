@@ -1,0 +1,4 @@
+unique_name: Enrollment_vs_Plan_Pct
+object_type: metric_calc
+label: Enrollment vs Plan %
+expression: "[Patients_Enrolled] / [Planned_Enrollment]"

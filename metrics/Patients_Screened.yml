@@ -1,0 +1,6 @@
+unique_name: Patients_Screened
+object_type: metric
+label: Patients Screened
+dataset: FACT_ENROLLMENT_WEEKLY
+column: PATIENTS_SCREENED
+calculation_method: sum

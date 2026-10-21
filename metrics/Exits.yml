@@ -1,0 +1,6 @@
+unique_name: Exits
+object_type: metric
+label: Exits
+dataset: FACT_HEADCOUNT_MONTHLY
+column: EXITS
+calculation_method: sum

@@ -1,0 +1,14 @@
+unique_name: DIM_DEPARTMENT
+object_type: dataset
+label: DIM_DEPARTMENT
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: DIM_DEPARTMENT
+columns:
+  - name: DEPARTMENT_ID
+    data_type: decimal
+  - name: DEPARTMENT_NAME
+    data_type: string
+  - name: FUNCTION_GROUP
+    data_type: string
+  - name: DEPARTMENT_HEAD_NAME
+    data_type: string

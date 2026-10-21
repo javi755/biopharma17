@@ -1,0 +1,6 @@
+unique_name: Contract_Value_USD
+object_type: metric
+label: Contract Value USD
+dataset: FACT_DEAL_CASH_FLOW
+column: CONTRACT_VALUE_USD
+calculation_method: maximum

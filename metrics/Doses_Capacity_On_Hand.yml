@@ -1,0 +1,6 @@
+unique_name: Doses_Capacity_On_Hand
+object_type: metric
+label: Doses Capacity On Hand
+dataset: FACT_RAW_MATERIAL_LOT
+column: DOSES_CAPACITY_ON_HAND
+calculation_method: sum

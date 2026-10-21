@@ -1,0 +1,49 @@
+unique_name: Program
+object_type: dimension
+label: Program
+type: standard
+level_attributes:
+  - unique_name: Development Stage
+    label: Development Stage
+    dataset: DIM_PROGRAM
+    name_column: DEVELOPMENT_STAGE
+    key_columns:
+      - DEVELOPMENT_STAGE
+  - unique_name: Program
+    label: Program
+    dataset: DIM_PROGRAM
+    name_column: PROGRAM_DISPLAY_NAME
+    key_columns:
+      - PROGRAM_ID
+  - unique_name: Modality
+    label: Modality
+    dataset: DIM_PROGRAM
+    name_column: MODALITY
+    key_columns:
+      - MODALITY
+  - unique_name: Indication
+    label: Indication
+    dataset: DIM_PROGRAM
+    name_column: INDICATION
+    key_columns:
+      - INDICATION
+  - unique_name: Program Status
+    label: Program Status
+    dataset: DIM_PROGRAM
+    name_column: PROGRAM_STATUS
+    key_columns:
+      - PROGRAM_STATUS
+  - unique_name: Program Owner
+    label: Program Owner
+    dataset: DIM_PROGRAM
+    name_column: PROGRAM_OWNER_NAME
+    key_columns:
+      - PROGRAM_OWNER_NAME
+hierarchies:
+  - unique_name: Program Hierarchy
+    label: Program Hierarchy
+    levels:
+      - unique_name: Development Stage
+        level_attribute: Development Stage
+      - unique_name: Program
+        level_attribute: Program

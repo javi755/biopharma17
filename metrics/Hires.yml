@@ -1,0 +1,6 @@
+unique_name: Hires
+object_type: metric
+label: Hires
+dataset: FACT_HEADCOUNT_MONTHLY
+column: HIRES
+calculation_method: sum

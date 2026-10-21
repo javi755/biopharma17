@@ -1,0 +1,11 @@
+# The inputs of the semantic model: every file in context/. comodel writes this file
+# once, at init. Git keeps the history of each input.
+comodel_version: 0.1.0
+source:
+  connection: Snowflake Partner
+  database: SUPPLY_CHAIN_OTD_DEMO
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  warehouse: snowflake
+# The folder that each comodel command writes. The agent writes the other files.
+written_by:
+  profile/: db profile

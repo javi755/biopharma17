@@ -1,0 +1,6 @@
+unique_name: Outstanding_USD
+object_type: metric
+label: Outstanding USD
+dataset: FACT_DEAL_CASH_FLOW
+column: OUTSTANDING_USD
+calculation_method: sum

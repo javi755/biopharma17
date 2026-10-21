@@ -1,0 +1,10 @@
+unique_name: Trailing_3M_Avg_Net_Burn_USD
+object_type: metric
+label: Trailing 3M Avg Net Burn USD
+dataset: FACT_CASH_MONTHLY
+column: TRAILING_3M_AVG_NET_BURN_USD
+calculation_method: sum
+semi_additive:
+  position: last
+  relationships:
+    - Cash to Date

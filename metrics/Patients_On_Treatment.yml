@@ -1,0 +1,10 @@
+unique_name: Patients_On_Treatment
+object_type: metric
+label: Patients On Treatment
+dataset: FACT_DOSE_SHIPMENT
+column: PATIENTS_ON_TREATMENT
+calculation_method: sum
+semi_additive:
+  position: last
+  relationships:
+    - Shipment to Date

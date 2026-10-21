@@ -1,0 +1,4 @@
+unique_name: Dose_Production_Attainment_Pct
+object_type: metric_calc
+label: Dose Production Attainment %
+expression: "[Doses_Produced] / [Planned_Doses]"

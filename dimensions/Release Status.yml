@@ -1,0 +1,17 @@
+unique_name: Release Status
+object_type: dimension
+label: Release Status
+is_degenerate: true
+level_attributes:
+  - unique_name: Release Status
+    label: Release Status
+    dataset: FACT_MANUFACTURING_BATCH
+    name_column: RELEASE_STATUS
+    key_columns:
+      - RELEASE_STATUS
+hierarchies:
+  - unique_name: Release Status
+    label: Release Status
+    levels:
+      - unique_name: Release Status
+        level_attribute: Release Status

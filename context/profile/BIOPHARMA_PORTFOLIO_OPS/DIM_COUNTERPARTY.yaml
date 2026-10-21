@@ -1,0 +1,46 @@
+tables:
+- name: DIM_COUNTERPARTY
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 15
+  row_count_source: sample
+  sample_rows: 15
+  declared_primary_key: [COUNTERPARTY_ID]
+  columns:
+  - name: COUNTERPARTY_ID
+    type: NUMBER
+    distinct_count: 15
+    distinct_count_source: engine
+    null_count: 0
+    min: 0
+    max: 16
+    mean: 7.8
+    sample_values: [0, 1, 2]
+    is_unique: true
+  - name: COUNTERPARTY_NAME
+    type: TEXT
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Internal (no external counterparty), GSK, Harbor Biologics]
+    is_unique: true
+  - name: COUNTERPARTY_TYPE
+    type: TEXT
+    distinct_count: 7
+    distinct_count_source: engine
+    null_count: 0
+    sample_values: [Internal, Strategic partner (CB-101 acquirer), CDMO]
+    is_unique: false
+  - name: PRIMARY_CONTACT
+    type: TEXT
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Not applicable, Claire Dumont, Owen Briggs]
+    is_unique: true
+  - name: RELATIONSHIP_OWNER_NAME
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Marcus Hale, Amira Solano, Priya Raman]
+    is_unique: false

@@ -1,0 +1,6 @@
+unique_name: Doses_Lost_To_Excursion
+object_type: metric
+label: Doses Lost To Excursion
+dataset: FACT_DOSE_SHIPMENT
+column: DOSES_LOST_TO_EXCURSION
+calculation_method: sum

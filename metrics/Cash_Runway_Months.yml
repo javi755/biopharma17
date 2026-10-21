@@ -1,0 +1,4 @@
+unique_name: Cash_Runway_Months
+object_type: metric_calc
+label: Cash Runway Months
+expression: "[Cash_Balance_USD] / [Trailing_3M_Avg_Net_Burn_USD]"

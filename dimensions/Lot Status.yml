@@ -1,0 +1,17 @@
+unique_name: Lot Status
+object_type: dimension
+label: Lot Status
+is_degenerate: true
+level_attributes:
+  - unique_name: Lot Status
+    label: Lot Status
+    dataset: FACT_RAW_MATERIAL_LOT
+    name_column: LOT_STATUS
+    key_columns:
+      - LOT_STATUS
+hierarchies:
+  - unique_name: Lot Status
+    label: Lot Status
+    levels:
+      - unique_name: Lot Status
+        level_attribute: Lot Status

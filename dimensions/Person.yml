@@ -1,0 +1,23 @@
+unique_name: Person
+object_type: dimension
+label: Person
+type: standard
+level_attributes:
+  - unique_name: Person
+    label: Person
+    dataset: DIM_PERSON
+    name_column: PERSON_NAME
+    key_columns:
+      - PERSON_ID
+  - unique_name: Title
+    label: Title
+    dataset: DIM_PERSON
+    name_column: TITLE
+    key_columns:
+      - TITLE
+hierarchies:
+  - unique_name: Person Hierarchy
+    label: Person Hierarchy
+    levels:
+      - unique_name: Person
+        level_attribute: Person

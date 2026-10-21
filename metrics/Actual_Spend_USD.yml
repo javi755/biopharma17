@@ -1,0 +1,6 @@
+unique_name: Actual_Spend_USD
+object_type: metric
+label: Actual Spend USD
+dataset: FACT_PROGRAM_SPEND
+column: ACTUAL_USD
+calculation_method: sum

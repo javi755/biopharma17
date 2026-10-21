@@ -1,0 +1,32 @@
+unique_name: FACT_DOSE_SHIPMENT
+object_type: dataset
+label: FACT_DOSE_SHIPMENT
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: FACT_DOSE_SHIPMENT
+columns:
+  - name: SHIPMENT_ID
+    data_type: decimal
+  - name: WEEK_DATE_KEY
+    data_type: decimal
+  - name: SITE_ID
+    data_type: decimal
+  - name: PROGRAM_ID
+    data_type: decimal
+  - name: COUNTERPARTY_ID
+    data_type: decimal
+  - name: SHIPMENT_COUNT
+    data_type: decimal
+  - name: DOSES_SHIPPED
+    data_type: decimal
+  - name: DOSES_ADMINISTERED
+    data_type: decimal
+  - name: TEMPERATURE_EXCURSIONS
+    data_type: decimal
+  - name: DOSES_LOST_TO_EXCURSION
+    data_type: decimal
+  - name: SHIPMENT_LEAD_TIME_DAYS
+    data_type: decimal
+  - name: SITE_DOSES_ON_HAND
+    data_type: decimal
+  - name: PATIENTS_ON_TREATMENT
+    data_type: decimal

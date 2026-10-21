@@ -1,0 +1,4 @@
+unique_name: Screen_to_Enroll_Pct
+object_type: metric_calc
+label: Screen to Enroll %
+expression: "[Patients_Enrolled] / [Patients_Screened]"

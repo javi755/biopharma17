@@ -1,0 +1,4 @@
+unique_name: Budget_Attainment_Pct
+object_type: metric_calc
+label: Budget Attainment %
+expression: "[Actual_Spend_USD] / [Budget_Spend_USD]"

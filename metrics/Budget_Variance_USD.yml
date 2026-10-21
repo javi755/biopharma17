@@ -1,0 +1,4 @@
+unique_name: Budget_Variance_USD
+object_type: metric_calc
+label: Budget Variance USD
+expression: "[Actual_Spend_USD] - [Budget_Spend_USD]"

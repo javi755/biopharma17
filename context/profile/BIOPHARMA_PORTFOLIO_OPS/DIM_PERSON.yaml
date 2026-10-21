@@ -1,0 +1,48 @@
+tables:
+- name: DIM_PERSON
+  schema: BIOPHARMA_PORTFOLIO_OPS
+  row_count: 7
+  row_count_source: sample
+  sample_rows: 7
+  declared_primary_key: [PERSON_ID]
+  columns:
+  - name: PERSON_ID
+    type: NUMBER
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 7
+    mean: 4.0
+    sample_values: [1, 2, 3]
+    is_unique: true
+  - name: PERSON_NAME
+    type: TEXT
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Helen Williamson, Priya Raman, Marcus Hale]
+    is_unique: true
+  - name: TITLE
+    type: TEXT
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Chief Executive Officer, Chief Scientific Officer, Chief Financial
+        Officer]
+    is_unique: true
+  - name: IS_CLOSE_COHORT
+    type: BOOLEAN
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: ['TRUE']
+    is_unique: false
+  - name: EMAIL
+    type: TEXT
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [helen.williamson@continentalbio.example, priya.raman@continentalbio.example,
+      marcus.hale@continentalbio.example]
+    is_unique: true

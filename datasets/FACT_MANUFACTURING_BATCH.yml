@@ -1,0 +1,50 @@
+unique_name: FACT_MANUFACTURING_BATCH
+object_type: dataset
+label: FACT_MANUFACTURING_BATCH
+connection_id: Connection - BIOPHARMA_PORTFOLIO_OPS
+table: FACT_MANUFACTURING_BATCH
+columns:
+  - name: BATCH_ID
+    data_type: decimal
+  - name: BATCH_NUMBER
+    data_type: string
+  - name: PROGRAM_ID
+    data_type: decimal
+  - name: COUNTERPARTY_ID
+    data_type: decimal
+  - name: OWNER_PERSON_ID
+    data_type: decimal
+  - name: ORIGINAL_SLOT_DATE_KEY
+    data_type: decimal
+  - name: SCHEDULED_START_DATE_KEY
+    data_type: decimal
+  - name: ACTUAL_START_DATE_KEY
+    data_type: decimal
+  - name: RELEASE_STATUS
+    data_type: string
+  - name: BATCH_COUNT
+    data_type: decimal
+  - name: SLIP_DAYS
+    data_type: decimal
+  - name: START_DELAY_DAYS
+    data_type: decimal
+  - name: PLANNED_OUTPUT_GRAMS
+    data_type: double
+  - name: PLANNED_YIELD_PCT
+    data_type: double
+  - name: YIELD_PCT
+    data_type: double
+  - name: OUTPUT_GRAMS
+    data_type: double
+  - name: RELEASED_GRAMS
+    data_type: double
+  - name: BATCH_PURPOSE
+    data_type: string
+  - name: PLANNED_DOSES
+    data_type: decimal
+  - name: DOSES_PRODUCED
+    data_type: decimal
+  - name: RELEASED_DOSES
+    data_type: decimal
+  - name: RELEASED_CLINICAL_DOSES
+    data_type: decimal
